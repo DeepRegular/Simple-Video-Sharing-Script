@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="template/common.css" type="text/css" media="all">
+    <title>{{PageTitle}}</title>
+  </head>
+  <body>
+    <nav>
+        <ul>
+            <li>
+                <a href="./">Home</a>
+            </li>
+            {{menu}}
+        </ul>
+    </nav>
+    <nav>
+        <ul>
+            <li>
+              <a href="./">Home</a>
+            </li>
+            {{Breadcrumbs}}
+        </ul>
+    </nav>
+    <main>
+        <ul>
+            {{ContentsList}}
+        </ul>
+    </main>
+   </body>
+</html>

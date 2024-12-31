@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="template/common.css" type="text/css" media="all">
+    <title>{{PageTitle}}</title>
+  </head>
+  <body>
+    <nav>
+        <ul>
+            <li>
+                <a href="./">Home</a>
+            </li>
+            {{menu}}
+        </ul>
+    </nav>
+    <nav>
+        <ul>
+            <li>
+              <a href="./">Home</a>
+            </li>
+            {{Breadcrumbs}}
+        </ul>
+    </nav>
+    <nav>
+        <ul>
+            {{SubNav}}
+        </ul>
+    </nav>
+    <main>
+    <video src="{{MovieURL}}" type="video/{{Extension}}" controls="controls" preload="none" poster="{{ThumbnailURL}}"></video>
+    </main>
+  </body>
+</html>

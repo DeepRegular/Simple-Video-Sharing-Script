@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ECEBEB;
+}
+
+nav:first-child ul {
+  list-style: none;
+  display: flex;
+  position: fixed;
+  flex-wrap: wrap;
+  height: 50px;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color:rgba(255,255,255,0.3);
+  box-shadow: 0px -1px 4px 0px rgba(0,0,0,0.4);
+  z-index: 3;
+}
+
+nav:first-child ul li {
+  border-left: 1px solid rgba(98,98,98,1);
+  padding-left: 5px;
+  min-width: 100px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 10px;
+  text-align: center;
+  display: inline-block;
+  font-size: 1rem;
+  opacity:0.7;
+}
+
+nav:first-child ul li a {
+  text-decoration: none;
+  color: rgba(98,98,98,1);
+  padding-left: 10px;
+  font-weight: bold;
+}
+
+nav:nth-child(2) ul {
+  list-style: none;
+  display: flex;
+  position: fixed;
+  margin-top: 0px;
+  padding-top: 48px;
+  height: 50px;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color:rgba(255,255,255,0.6);
+  box-shadow: 0px -1px 4px 0px rgba(0,0,0,0.4);
+  z-index: 2;
+}
+
+nav:nth-child(2) ul li {
+  padding-left: 5px;
+  min-width: 100px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 10px;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  font-size: 1rem;
+  opacity:0.7;
+}
+
+nav:nth-child(2) ul li:first-child {
+  border-left: 1px solid rgba(98,98,98,1);
+}
+
+nav:nth-child(2) ul li:not(:first-child)::before {
+  content: "";
+  position: absolute;
+  top: .45em;
+  left: 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  width: 10px;
+  height: 10px;
+  border-top: 1px solid rgba(98,98,98,1);
+  border-right: 1px solid rgba(98,98,98,1);
+}
+
+nav:nth-child(2) ul li a {
+  text-decoration: none;
+  color: rgba(98,98,98,1);
+  padding-left: 20px;
+  font-weight: bold;
+}
+
+nav:nth-child(2) ul li:first-child a {
+  padding-left: 10px;
+}
+
+nav:nth-child(3) ul {
+  list-style: none;
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color:rgba(255,255,255,0.8);
+  box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.4);
+  z-index: 2;
+}
+
+nav:nth-child(3) ul li {
+  padding-left: 5px;
+  min-width: 100px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 10px;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  list-sytle: none;
+  font-size: 1rem;
+  opacity:0.7;
+}
+
+nav:nth-child(3) ul li:first-child {
+  border-left: 1px solid rgba(98,98,98,1);
+}
+
+nav:nth-child(3) ul li:last-child {
+  border-right: 1px solid rgba(98,98,98,1);
+  padding-right: 20px;
+}
+
+nav:nth-child(3) ul li:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  top: .45em;
+  left: 0;
+  -webkit-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+  width: 10px;
+  height: 10px;
+  border-top: 1px solid rgba(98,98,98,1);
+  border-right: 1px solid rgba(98,98,98,1);
+}
+
+nav:nth-child(3) ul li:last-child::before {
+  content: "";
+  position: absolute;
+  top: .45em;
+  left: 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  width: 10px;
+  height: 10px;
+  border-top: 1px solid rgba(98,98,98,1);
+  border-right: 1px solid rgba(98,98,98,1);
+}
+
+nav:nth-child(3) ul li a {
+  text-decoration: none;
+  color: rgba(98,98,98,1);
+  padding-left: 20px;
+  font-weight: bold;
+}
+
+main {
+  width: 100%;
+  text-align: center;
+}
+
+main img {
+  width: 100%;
+}
+
+main ul {
+  padding-top: 110px;
+  padding-bottom: 20px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+main ul li {
+  flex-basis: 20%;
+  min-height: 180px;
+  background-color: #fff;
+  margin: 3px;
+  box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.6);
+  font-size: 0.9rem;
+}
+
+main ul li a {
+  text-decoration: none;
+  color: rgba(98,98,98,1);
+}
+
+main video {
+  margin-top: 130px;
+  width: 1280px;
+  height: 720px;
+}
